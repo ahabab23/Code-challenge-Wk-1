@@ -1,6 +1,5 @@
 let button = document.querySelector(".button")
 let result = document.querySelector(".result");
-
 let grade = document.querySelector(".grade")
 function check() {
     // Get the values of the HTML elements with the IDs javascript, css, python, react, and ruby
@@ -9,6 +8,8 @@ function check() {
     let python = document.querySelector("#python").value;
     let react = document.querySelector("#react").value;
     let ruby = document.querySelector("#ruby").value;
+    let sum = parseFloat(js) + parseFloat(css) + parseFloat(python) + parseFloat(react) + parseFloat(ruby);
+    let average = (sum / 500) * 100;
 
     // Check if any of the input values are empty or out of range
     if (js === '' || css === '' || python === '' || react === '' || ruby === '' ||
@@ -16,21 +17,7 @@ function check() {
         react < 0 || react > 100 || ruby < 0 || ruby > 100) {
         // If it is, display a message in the result element
         result.innerHTML = `<p>Please Enter A Valid Value Between 0 and 100</p>`
-    }
-}
-function calculate() {
-     // Get the values of the HTML elements with the IDs javascript, css, python, react, and ruby
-    let js = document.querySelector("#javascript").value;
-    let css = document.querySelector("#css").value;
-    let python = document.querySelector("#python").value;
-    let react = document.querySelector("#react").value;
-    let ruby = document.querySelector("#ruby").value;
-    // calling  the  function to validate user inputs
-    check()
-    let sum = parseFloat(js) + parseFloat(css) + parseFloat(python) + parseFloat(react) + parseFloat(ruby);
-    let average = (sum / 500) * 100;
-    // Displaying the Grade on the page
-    if (average > 79 && average <= 100) {
+    } else if (average > 79 && average <= 100) {
         grade.innerHTML = `Grade: A`
     } else if (average > 60 && average <= 79) {
         grade.innerHTML = `Grade: B`
@@ -45,7 +32,7 @@ function calculate() {
     let percentage = document.querySelector('.Percentage')
     totalMarks.innerHTML = `Total Marks : ${sum}/500`
     percentage.innerHTML = `Percentage : ${Math.round(average)}%`
-
 }
 
-button.addEventListener("click", calculate)
+
+button.addEventListener("click", check)

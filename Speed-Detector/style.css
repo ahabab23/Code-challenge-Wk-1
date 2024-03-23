@@ -4,7 +4,10 @@
 }
 .secondary_header{
     margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
 }
+
 .form_container{
     text-align: center;
     display: flex;
@@ -19,4 +22,15 @@
 }
 .tertiary_header{
     margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.output{
+    width: 10%;
+    padding: 3rem;
+    margin-top: 1rem;
+    color: white;
+    margin: auto;
+    margin-top: 1rem;  
+    font-size: 1.5rem; 
 }
