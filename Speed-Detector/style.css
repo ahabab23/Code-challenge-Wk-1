@@ -1,0 +1,22 @@
+#speed_detector{
+    margin-top: 5rem;
+    text-align: center;
+}
+.secondary_header{
+    margin-bottom: 3rem;
+}
+.form_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0.35);
+    padding: 3rem;
+    width: 20%;
+    border-radius: 1rem;
+    margin: auto;
+}
+.tertiary_header{
+    margin-bottom: 2rem;
+}

@@ -19,14 +19,17 @@ function check() {
     }
 }
 function calculate() {
+     // Get the values of the HTML elements with the IDs javascript, css, python, react, and ruby
     let js = document.querySelector("#javascript").value;
     let css = document.querySelector("#css").value;
     let python = document.querySelector("#python").value;
     let react = document.querySelector("#react").value;
     let ruby = document.querySelector("#ruby").value;
+    // calling  the  function to validate user inputs
     check()
     let sum = parseFloat(js) + parseFloat(css) + parseFloat(python) + parseFloat(react) + parseFloat(ruby);
     let average = (sum / 500) * 100;
+    // Displaying the Grade on the page
     if (average > 79 && average <= 100) {
         grade.innerHTML = `Grade: A`
     } else if (average > 60 && average <= 79) {
