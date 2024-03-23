@@ -51,3 +51,8 @@ input:focus {
     color: #c7365f;
     background-color: #333;
 }
+.result{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
