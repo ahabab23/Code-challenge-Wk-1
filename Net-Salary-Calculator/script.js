@@ -161,6 +161,6 @@ function calc() {
         <td><h2>${netPay}</h2></td>
     </tr>
     </table>`
-    output.style.cssText=" background-color:  rgba(153, 92, 92, 0.35);padding: 5rem;width: 30%;border-radius: 1rem;margin: auto;color: white;text-align: initial;"
+    output.style.cssText=" background-color:  rgba(211, 222, 223, 0.35);padding: 5rem;width: 30%;border-radius: 1rem;margin: auto;color: white;text-align: initial;"
 }
 button.addEventListener('click', calc)

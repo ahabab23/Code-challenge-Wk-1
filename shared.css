@@ -11,20 +11,31 @@ body{
     color: #333;
 }
 .navbar{
-    background-color:  #c7365f;
-    padding: 1.5rem;
+    background-color:  #9FCAE5;
+    padding: 2rem;
 
 }
 .nav_items{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .nav_item a {
     color: inherit;
     font-size: 1.5rem;
     font-weight: bold;
+    background-color: #D79FC7;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;  
+    padding: 1rem ;
+    border-radius: 20px;
+}
+.nav_item a:hover{
+    color: #D79FC7;
+    background-color: #333;
 }
 
 input {
