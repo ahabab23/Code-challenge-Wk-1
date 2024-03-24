@@ -34,19 +34,6 @@ NB: Use KRA, NHIF, and NSSF values provided in the link below.
 * NSSF rates https://www.nssf.or.ke/notice-to-employers-on-the-updated-nssf-rates.The recent Update from Feb 2024
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Build With
 The website is built with the following:
 
@@ -59,8 +46,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## 📫 Contacts
-Emaill:uwess529300@gmail.com
-Tel no. +254723867116
+* Emaill:uwess529300@gmail.com
+* Tel no. +254723867116
 
 📝 License
 MIT
