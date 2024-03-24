@@ -37,9 +37,11 @@ function nhifCalc() {
 
     } else if (basicSalary >= 25000 && basicSalary < 30000) {
         nhif = 850
-    } else if (basicSalary >= 30000 && basicSalary < 40000) {
+    } else if (basicSalary >= 30000 && basicSalary < 35000) {
+        nhif = 900
+    }else if (basicSalary >= 35000 && basicSalary < 40000) {
         nhif = 950
-    } else if (basicSalary >= 40000 && basicSalary < 45000) {
+     } else if (basicSalary >= 40000 && basicSalary < 45000) {
         nhif = 1000
     } else if (basicSalary >= 45000 && basicSalary < 50000) {
         nhif = 1100
