@@ -16,6 +16,7 @@ body{
 .navbar{
     background-color:  #6e92cc;
     padding: 2rem;
+    box-shadow: 0 0.5rem 1r
 
 }
 /* Create a flex container for the navigation items */
@@ -37,6 +38,7 @@ body{
     outline: none;  
     padding: 1rem ;
     border-radius: 20px;
+    box-shadow: 0 0.5rem 1r
 }
 /* Change color on hover */
 .nav_item a:hover{
