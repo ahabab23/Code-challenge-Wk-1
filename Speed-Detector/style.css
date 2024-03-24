@@ -21,6 +21,7 @@
     padding: 3rem;
     width: 20%;
     border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     margin: auto;
 }
  /* Tertiary header styling */
