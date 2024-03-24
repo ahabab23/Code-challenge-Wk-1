@@ -1,0 +1,55 @@
+.net_salary_calc{
+    margin-top: 3rem;
+    text-align: center;
+}
+.net_salary_calc h1{
+    margin-bottom: 2rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.inputs{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0.35);
+    padding: 3rem;
+    width: 30%;
+    border-radius: 1rem;
+    margin: auto;
+}
+.salary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+
+}
+.salary h2{
+    width: 70%;
+    margin-right: 1rem;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.benefits h2{
+    width: 70%;
+    margin-right: 3rem;
+}
+
+.output h2{
+    margin-left: 2rem;
+}

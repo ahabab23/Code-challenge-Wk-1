@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../shared.css">
-    <title>Grade Generator</title>
+    <title>Net Salary Calculator</title>
 </head>
 
 <body>
@@ -27,11 +27,32 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="net_salary_calc">
+            <h1>Net Salary Calculator</h1>
+            <div class="container">
+                <div class="inputs">
+                    <div class="salary">
+                        <h2>Basic Salary</h2>
+                        <input type="number" id="salary"  value="0" placeholder="Basic Salary">
+                    </div>
+                    <div class="benefits">
+                        <h2>Benefits</h2>
+                        <input type="number" id="benefits" value="0"  placeholder="Benefits">
+                    </div>
+
+                    <button class="button">Calculator</button>
+
+                </div>
+                <div class="output">
+                </div>
+
+            </div>
+
+
 
         </section>
     </main>
 
 </body>
-
+<script src="script.js"></script>
 </html>
