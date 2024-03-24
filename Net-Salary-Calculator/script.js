@@ -192,7 +192,7 @@ function calc() {
         <td><h2>${netPay}</h2></td>
     </tr>
     </table>`
-    output.style.cssText=" background-color:  rgba(211, 222, 223, 0.35);padding: 5rem;width: 30%;border-radius: 1rem;margin: auto;color: white;text-align: initial;"
+    output.style.cssText=" background-color:  rgba(211, 222, 223, 0.35);padding: 5rem;width: 30%;border-radius: 1rem;margin: auto;color: white;text-align: initial;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);"
 }
 // add event listener to  button 
 button.addEventListener('click', calc)
