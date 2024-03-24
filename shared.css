@@ -1,26 +1,31 @@
-*{
+
+ /* apply to all elements */*{
     list-style:  none;
     text-decoration: none;
     padding: 0;
     margin: 0;
 }
+/* Set background color */
 body{
     font-family: "Nunito Sans", sans-serif;
-    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    background-color: #3C5E95  ;
     height: 100vh;
     color: #333;
 }
+/* Navbar background color */
 .navbar{
-    background-color:  #9FCAE5;
+    background-color:  #6e92cc;
     padding: 2rem;
 
 }
+/* Create a flex container for the navigation items */
 .nav_items{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+/* Change text color to its parent */
 .nav_item a {
     color: inherit;
     font-size: 1.5rem;
@@ -33,11 +38,12 @@ body{
     padding: 1rem ;
     border-radius: 20px;
 }
+/* Change color on hover */
 .nav_item a:hover{
     color: #D79FC7;
     background-color: #333;
 }
-
+/* Styling inputs */
 input {
     display: block;
     margin: 2rem auto;
@@ -51,11 +57,11 @@ input {
     font-weight: bold;
     padding: 0 1rem;
 }
-
+/* remove outline on input focus */
 input:focus {
     outline: none;
 }
-
+/* styling button */
 .button {
     border: none;
     padding: 1rem 1.5rem;
@@ -67,7 +73,7 @@ input:focus {
     cursor: pointer;
 
 }
-
+/* styling button on hover*/
 .button:hover {
     color: #fff;
     background-color: #c7365f;

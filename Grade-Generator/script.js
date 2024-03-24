@@ -22,7 +22,9 @@ function check() {
         totalMarks.innerHTML = ``
         percentage.innerHTML = ``
 
-    } else {
+    } 
+    // checks for other condition
+    else {
         if (average > 79 && average <= 100) {
             grade.innerHTML = `Grade: A`
         } else if (average > 60 && average <= 79) {
@@ -41,5 +43,5 @@ function check() {
 
 }
 
-
+// Adds event listener to the button
 button.addEventListener("click", check)

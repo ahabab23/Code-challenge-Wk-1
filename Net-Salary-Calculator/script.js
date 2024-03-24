@@ -1,6 +1,9 @@
+// Get HTML elements
 let benefits = document.querySelector("#benefits").value
 const button = document.querySelector(".button")
+ // Convert string to number
 benefits = parseFloat(benefits)
+// initialise Variables
 let nhif;
 let nssf;
 let insuranceRelief;
@@ -9,14 +12,18 @@ let payee;
 let taxablePay;
 let netPay;
 
+// Function to calculate NHIF
 function nhifCalc() {
+    // Get HTML elements
     let basicSalary = document.querySelector("#salary").value
-
+   // Convert string to number
     basicSalary = parseFloat(basicSalary)
 
+    // Calculate NHIF based on basic salary
     if (basicSalary >= 600 && basicSalary < 6000) {
          nhif = 150
     }
+     // More conditions for different basic salary ranges
     else if (basicSalary >= 6000 && basicSalary < 8000) {
         nhif = 300
     } else if (basicSalary >= 8000 && basicSalary < 12000) {
@@ -53,15 +60,25 @@ function nhifCalc() {
     }
     return nhif
 }
+
+// Function to calculate NSSF contribution
 function nssfCalc(){
+     // Get basic salary value from HTML
     let basicSalary = document.querySelector("#salary").value
+     // Convert string to number
     basicSalary = parseFloat(basicSalary)
+     // If basic salary is between 1000 and 7000
     if(basicSalary>1000 && basicSalary<=7000){
+        // Set NSSF to 420
         nssf=420
 
-    }else if(basicSalary>7000 && basicSalary<=36000){
+    } // If basic salary is between 7001 and 36000
+    else if(basicSalary>7000 && basicSalary<=36000){
+          // Calculate NSSF based on 6% of basic salary
         nssf=Math.round(420+0.06*(basicSalary-7000))
-    }else if(basicSalary>36000){
+    
+    }// Fixed amount for this range
+    else if(basicSalary>36000){
         nssf=2160
     }else{
         nssf=0
@@ -69,21 +86,27 @@ function nssfCalc(){
    return nssf
 
 }
+// Function to calculate insurance relief
 function insuranceReliefCalc(){
     nhif=nhifCalc()
     insuranceRelief=Math.round(0.15*nhif)
     return insuranceRelief
 
 }
+
+// Function to calculate Payee
 function payeeCalc(){
     let basicSalary = document.querySelector("#salary").value
     let benefits = document.querySelector("#benefits").value
     basicSalary = parseFloat(basicSalary)
     benefits = parseFloat(benefits)
+    // Define constant values
     let personalRelief=2400
     let insuranceRelief=insuranceReliefCalc()
     let nssf=nssfCalc()
+    // Calculate taxable pay
     taxablePay=basicSalary-benefits-nssf
+    // Calculate payee based on taxable pay range
     if(taxablePay===24001){
         payee=2400-personalRelief-insuranceRelief
     }else if(taxablePay>24001 && taxablePay <=32333){
@@ -93,24 +116,32 @@ function payeeCalc(){
     }else{
         payee=0
     }
+    // Return the calculated payee
     return payee
 
 }
+// Function to calculate net pay
 function netPayCalc(){
     let basicSalary = document.querySelector("#salary").value
     let benefits = document.querySelector("#benefits").value
     basicSalary = parseFloat(basicSalary)
     benefits = parseFloat(benefits)
+    // Get payee and NSSF and NHIF values
     let payee=payeeCalc()
     let nssf=nssfCalc()
     let  nhif=nhifCalc()
+     // Calculate net pay
     netPay=basicSalary-benefits-payee-nssf-nhif
+    if(netPay<0){
+        netPay=0
+    }else{
+        netPay=netPay
+    }
     return Math.round(netPay)
 }
 
 
-
-
+//  Event listeners for input fields
 function calc() {
     let basicSalary = document.querySelector("#salary").value
     let benefits = document.querySelector("#benefits").value
@@ -163,4 +194,5 @@ function calc() {
     </table>`
     output.style.cssText=" background-color:  rgba(211, 222, 223, 0.35);padding: 5rem;width: 30%;border-radius: 1rem;margin: auto;color: white;text-align: initial;"
 }
+// add event listener to  button 
 button.addEventListener('click', calc)

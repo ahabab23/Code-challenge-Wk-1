@@ -1,11 +1,14 @@
+/* styles the h1 header */
 .primary_header {
     text-align: center;
     margin-top: 2rem;
     font-weight: bold;
     font-size: 2rem;
+    color: white;
 
 }
 
+/* styles the input class */
 .inputs {
     background-color: rgba(255, 255, 255, 0.35);
     width: 30vw;
@@ -17,6 +20,7 @@
 
 }
 
+/* styles the result clss */
 .result{
     text-align: center;
     font-size: 1.5rem;
